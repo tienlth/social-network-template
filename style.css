@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background-image: url('image/background.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+}
+#navbar{
+    position: sticky;
+    top:0;
+}
+
+#navbar> div, #navbar>ul{
+    float:left;
+}
+#navlink{
+    list-style: none;
+    height:60px;
+    width: 95%;
+    background-color: rgb(70, 73, 73);
+}
+#navlink a{
+    text-decoration: none;
+    color: white;
+    font: 40px;
+    font-family: sans-serif;
+}
+#navlink li{
+    float:left;
+    display: block;
+    height:100%;
+    width: 12.5%;
+    padding: 0px;
+    margin: 0;
+    border-right:1px solid rgb(115, 116, 117);
+    text-align: center;
+    line-height: 60px;
+}
+#navlink>li:hover{
+    background-color: rgb(44, 71, 71);
+}
+#container #navbar #menuicon{
+    display: inline-block;
+    width: 5%;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: lightslategray;
+    cursor: pointer;
+}
+#container #navbar #menuicon:hover {
+    background-color: lightsteelblue;
+}
+#container #navbar #menuicon:hover #menu{
+    opacity: 1;
+    z-index: 1;
+    width: 20%;
+    transition: opacity 0.5s, width 0.5s;
+    left: 0;
+}
+#container #navbar #menuicon #menu{
+    position: absolute;
+    left: -100%;
+    width: 0%;
+    height:500px;
+    background-color: lightseagreen;
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 10px 5px 10px rgb(51, 70, 69);
+    /* overflow: auto; */
+    cursor: auto;
+}
+ul{
+    list-style: none;
+}
+#container #navbar #menuicon #menu>li{
+    float:left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer; 
+}
+#container #navbar #menuicon #menu> li:hover{
+    background-color: rgb(4, 97, 92);
+    transition: all 0.25s;
+}
+
+.submenu{
+    position: relative;
+    display: block;
+    left: 100%;
+    width: 0%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    top:-60px;
+    box-shadow: 10px 5px 10px rgb(8, 43, 41);
+}
+
+.submenu>li{
+    position: relative;
+    width: 100%;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(28, 114, 110);
+    display: block;
+}
+.submenu>li:hover{
+    background-color: rgb(61, 122, 119);
+}
+.menu-title:hover > ul{
+    width: 100%;
+    opacity: 1;
+}
+#navlink > li > ul{
+    position: relative;
+    left: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left:0%;
+    height: 300px;
+    box-shadow: 10px 5px 10px rgb(122, 126, 126);
+    background-color: rgb(122, 126, 126);
+    display: none;
+}
+#navlink > li > ul > li{
+    display: block;
+    width: 100%;
+    height:60px;
+    background-color: rgb(122, 126, 126);
+    float:left;
+}
+#navlink > li:hover > ul{
+    display: block;
+}
+#navlink > li:hover > ul >li{
+    height: 60px;
+}
+#navlink > li > ul > li:hover{
+    background-color: rgb(80, 94, 94);
+    transition: all 0.25s;
+}
+a{
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+    width: 100%;
+    height:100%;
+}
+
+#content iframe{
+    z-index: -999;
+}
+#popup{
+    position: fixed;
+    top:200px;
+    right:0;
+    display: block;
+    float:right;
+    width: 25%;
+    height:400px;
+    background-color: powderblue;
+    z-index: 1;
+}
+#popup > ul > li{
+    width: 100%;
+    height:60px;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: underline;
+    color: blueviolet;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+    cursor: pointer;
+}
+#popup>h3{
+    width: 100%;
+    height:60px;
+    text-align: center;
+    line-height: 60px;
+}
+#navlink > li.right{
+    float:right;
+}
+#loginForm{
+    position: fixed;
+    width: 50%;
+    height:500px;
+    margin:auto;
+    top:10%;
+    left:25%;
+    z-index: 2;
+    display: none;
+}
+#loginForm>form{
+    margin:auto;
+    width: 70%;
+    height:80%;
+    background-color: cyan;
+    box-shadow: 10px 5px 5px rgb(37, 124, 124);
+    margin-top: 5%;
+    border-radius: 10%;
+}
+#loginForm>form>label, #loginForm>form>input, #loginForm>form>h3{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+#loginForm>form>input{
+    border-radius: 10px;
+    height:40px;
+}
+#loginForm>form>h3{
+    color:rgb(194, 111, 34);
+    margin-top: 20px;
+    text-align: center;
+}
+

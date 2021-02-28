@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>template social media</title> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="container">
+        <div id="navbar">
+            <div id="menuicon"><i class="material-icons" style="vertical-align: middle;">reorder</i>
+                <ul id="menu">
+                    <li class="menu-title"><div>Thời sự</div>
+                        <ul class="submenu">
+                            <li>Tin nóng</li>
+                            <li>Chính Trị</li>
+                            <li>Pháp Luật</li>
+                        </ul>
+                    </li>
+                    <li class="menu-title"><div>Thể Thao</div> 
+                        <ul class="submenu">
+                            <li>Bóng đá</li>
+                            <li>Quần vợt</li>
+                            <li>Bơi lội</li>
+                            <li>Banh đũa</li>
+                        </ul>
+                    </li>
+                    <li class="menu-title"><div>Thị Trường</div> 
+                        <ul class="submenu">
+                            <li>Hoa kì</li>
+                            <li>Eu</li>
+                            <li>Trung Đông</li>
+                            <li>Asean</li>
+                            <li>Chợ Bà Chiểu</li>
+                        </ul>
+                    </li>
+                    <li class="menu-title"><div>Showbit</div>
+                        <ul class="submenu">
+                            <li><a href="#">Âm nhạc</a></li>
+                            <li>Điện ảnh</li>
+                            <li>Sân khấu</li>
+                            <li>Trending</li>
+                            <li>Phốt</li>
+                        </ul>
+                    </li>
+                    <li class="menu-title"><div>Sức Khỏe</div>
+                        <ul class="submenu">
+                            <li><a href="">Nam giới</a></li>
+                            <li>Phụ nữ</li>
+                            <li>Sinh sản</li>
+                            <li>Chuẩn đoán</li>
+                            <li>Bí quyết</li>
+                        </ul>
+                    </li>
+                    <li class="menu-title"><div>Đời sống</div>
+                        <ul class="submenu">
+                            <li>Hôn nhân</li>
+                            <li>Gia đình</li>
+                            <li>Du lịch</li>
+                            <li>Mẹo Vặt</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul id="navlink">
+                <li> <a href="#1">Trang chủ</a>
+                </li>
+                <li><a href="#3">Video</a>
+                    <ul>
+                        <li><a href="#11">Nhạc</a></li>
+                        <li><a href="#12">Phim</a></li>
+                        <li><a href="#13">Hài Kịch</a></li>
+                        <li><a href="#14">Hoạt Hình</a></li>
+                    </ul>
+                </li>
+                <li><a href="#4">Mua bán</a>
+                    <ul>
+                        <li><a href="#11">Điện tử</a></li>
+                        <li><a href="#12">Thực phẩm</a></li>
+                        <li><a href="#13">Dược phẩm</a></li>
+                        <li><a href="#14">Trang sức</a></li>
+                    </ul>
+                </li>
+                <li id="loginButton" onclick="myfunct()" class="right"><a href="#6">Đăng Nhập</a></li>
+                <li class="right"><a href="#5">Tìm kiếm</a></li>
+            </ul>
+        </div>
+        <div id="content">
+           <iframe src="content1.html" name="contentFrame" frameborder="0" width="100%" height="2000px"></iframe>
+        </div>
+    </div>
+    <div id="popup">
+        <h3>Nổi Bật</h3>
+        <ul>
+            <li>Cô Minh Hiếu và 100 cây vàng</li>
+            <li>Trai Việt đó đẹp trai mà khoai lại to ò o ò o</li>
+            <li>Ông Hùng chửi lộn với bà tư Nha</li>
+            <li>Cô Minh Hiếu cạch mặt cô 3 vàng mã</li>
+            <li>Xe đang đi đang đi thì cháy</li>
+        </ul>
+    </div>
+    <div id="loginForm">
+        <form action="#">
+            <br><h3>Đăng Nhập</h3><br><br>
+            <label>Tên tài khoản:</label><br>
+            <input type="text"><br>
+            <label>Mật Khẩu:</label><br>
+            <input type="password"><br><br>
+            <input type="submit" value="Đăng Nhập">
+        </form>
+    </div>
+</body>
+<script>
+    function myfunct(){
+        document.getElementById('container').style.opacity='0.3';
+        document.getElementById('header').style.opacity='0.3';
+        document.getElementById('popup').style.opacity='0.3';
+        document.getElementById('loginForm').style.display='block';
+        document.getElementById('loginForm').style.opacity='1';
+    }
+</script>
+</html>
