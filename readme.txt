@@ -1,1 +1,1 @@
-lorem ipsum sit 
+lorem ipsum sit amet
